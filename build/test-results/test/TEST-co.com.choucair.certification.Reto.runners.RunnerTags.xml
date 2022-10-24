@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.choucair.certification.Reto.runners.RunnerTags" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-24T00:28:57" hostname="OSCAR" time="0.002">
+<testsuite name="co.com.choucair.certification.Reto.runners.RunnerTags" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-24T01:56:17" hostname="OSCAR" time="0.002">
   <properties/>
   <testcase name="initializationError" classname="co.com.choucair.certification.Reto.runners.RunnerTags" time="0.002">
-    <failure message="java.lang.IllegalArgumentException: Not a file or directory: C:\Users\oscar\IdeaProjects\Reto\src\test\resources\features\demo.feature" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Not a file or directory: C:\Users\oscar\IdeaProjects\Reto\src\test\resources\features\demo.feature
-	at cucumber.runtime.io.FileResourceIterator$FileIterator.&lt;init&gt;(FileResourceIterator.java:63)
-	at cucumber.runtime.io.FileResourceIterator.&lt;init&gt;(FileResourceIterator.java:28)
-	at cucumber.runtime.io.FileResourceIterator.createFileResourceIterator(FileResourceIterator.java:14)
-	at cucumber.runtime.io.FileResourceIterable.iterator(FileResourceIterable.java:19)
-	at cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:112)
-	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:49)
-	at cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:31)
-	at cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:311)
-	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:81)
-	at net.serenitybdd.cucumber.CucumberWithSerenity.&lt;init&gt;(CucumberWithSerenity.java:54)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+    <failure message="cucumber.runtime.CucumberException: gherkin.ParserException$CompositeParserException: Parser errors:&#10;(2:1): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'feature: ingresar a pagina utest'&#10;(3:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'se inicia el ingreso a la pagina'&#10;(5:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'scenario'&#10;(6:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'ingreso a la pagina'&#10;(7:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'dado que se inicia proceso'&#10;(8:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'cuando el usuario ingresa a la pagina'&#10;(9:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'despues finaliza proceso'&#10;(10:0): unexpected end of file, expected: #TagLine, #FeatureLine, #Comment, #Empty" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: gherkin.ParserException$CompositeParserException: Parser errors:
+(2:1): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'feature: ingresar a pagina utest'
+(3:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'se inicia el ingreso a la pagina'
+(5:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'scenario'
+(6:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'ingreso a la pagina'
+(7:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'dado que se inicia proceso'
+(8:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'cuando el usuario ingresa a la pagina'
+(9:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'despues finaliza proceso'
+(10:0): unexpected end of file, expected: #TagLine, #FeatureLine, #Comment, #Empty
+	at app//cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:60)
+	at app//cucumber.runtime.model.CucumberFeature.loadFromFeaturePath(CucumberFeature.java:113)
+	at app//cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:49)
+	at app//cucumber.runtime.model.CucumberFeature.load(CucumberFeature.java:31)
+	at app//cucumber.runtime.RuntimeOptions.cucumberFeatures(RuntimeOptions.java:311)
+	at app//cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:81)
+	at app//net.serenitybdd.cucumber.CucumberWithSerenity.&lt;init&gt;(CucumberWithSerenity.java:54)
+	at java.base@16.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@16.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base@16.0.2/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@16.0.2/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@16.0.2/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at app//org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at app//org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at app//org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
 	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@16.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base@16.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@16.0.2/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -45,8 +50,22 @@
 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: gherkin.ParserException$CompositeParserException: Parser errors:
+(2:1): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'feature: ingresar a pagina utest'
+(3:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'se inicia el ingreso a la pagina'
+(5:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'scenario'
+(6:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'ingreso a la pagina'
+(7:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'dado que se inicia proceso'
+(8:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'cuando el usuario ingresa a la pagina'
+(9:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'despues finaliza proceso'
+(10:0): unexpected end of file, expected: #TagLine, #FeatureLine, #Comment, #Empty
+	at app//gherkin.Parser.parse(Parser.java:143)
+	at app//gherkin.Parser.parse(Parser.java:118)
+	at app//gherkin.Parser.parse(Parser.java:114)
+	at app//cucumber.runtime.FeatureBuilder.parse(FeatureBuilder.java:56)
+	... 40 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
